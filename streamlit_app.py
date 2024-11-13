@@ -9,7 +9,7 @@ def main():
     st.text(params)
     st.text(params.get('id'))
     id=params.get('id')
-    url = f"https://docs.google.com/spreadsheets/d/{id}"
+    url = f"https://docs.google.com/spreadsheets/d/{id[0]}"
 
     conn = st.connection("gsheets", type=GSheetsConnection)
 
