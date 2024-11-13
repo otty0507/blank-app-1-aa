@@ -7,11 +7,11 @@ from streamlit_gsheets import GSheetsConnection
 def main():
     params = st.experimental_get_query_params()
     st.text(params)
-    id=params['id'][0]
+    id=params['idd'][0]
     url = f"https://docs.google.com/open?id={id}"
 
-    # conn = st.connection("gsheets", type=GSheetsConnection)
+    conn = st.connection("gsheets", type=GSheetsConnection)
 
-    # data = conn.read(spreadsheet=url, usecols=[0, 1])
-    # st.dataframe(data)
+    data = conn.read(spreadsheet=url, usecols=[0, 1])
+    st.dataframe(data)
 main()
