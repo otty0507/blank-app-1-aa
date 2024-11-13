@@ -10,8 +10,8 @@ def main():
     id=params['id'][0]
     url = f"https://docs.google.com/open?id={id}"
 
-    conn = st.connection("gsheets", type=GSheetsConnection)
+    # conn = st.connection("gsheets", type=GSheetsConnection)
 
-    data = conn.read(spreadsheet=url, usecols=[0, 1])
-    st.dataframe(data)
+    # data = conn.read(spreadsheet=url, usecols=[0, 1])
+    # st.dataframe(data)
 main()
