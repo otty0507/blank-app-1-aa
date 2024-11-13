@@ -9,8 +9,10 @@ def main():
     # st.text(params)
     # id=params.get('id')
     st.text(id)
-    st.text('https://docs.google.com/spreadsheets/d/'+str(id)+'/edit?gid=0#gid=0')
-    url = 'https://docs.google.com/spreadsheets/d/'+str(id)+'/edit?gid=0#gid=0'
+
+    # st.text(str(st.query_params.to_dict))
+    st.text('https://docs.google.com/spreadsheets/d/'+str(id)+'/edit?gid=1513024147#gid=1513024147')
+    url = 'https://docs.google.com/spreadsheets/d/'+str(id)+'/edit?gid=1513024147#gid=1513024147'
 
     conn = st.connection("gsheets", type=GSheetsConnection)
 
