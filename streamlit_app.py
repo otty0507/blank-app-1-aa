@@ -7,7 +7,7 @@ import streamlit as st
 def main():
     params = st.experimental_get_query_params()
     st.text(params)
-    st.text(params.id)
+    st.text(params['id'])
     # url = "https://docs.google.com/open?id=1ZGyumlD4vl6AN4EcIUIYeDK5w_48qF2LUONQqC1KJ0E"
 
     # conn = st.connection("gsheets", type=GSheetsConnection)
