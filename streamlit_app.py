@@ -7,10 +7,10 @@ from streamlit_gsheets import GSheetsConnection
 def main():
     params = st.experimental_get_query_params()
     st.text(params)
-    id=params.get('id')
+    id=params.get('id')[0]
     st.text(id)
-    st.text('https://docs.google.com/spreadsheets/d/'+id+'/edit?usp=sharing')
-    url = 'https://docs.google.com/spreadsheets/d/'+id+'/edit?usp=sharing'
+    st.text('https://docs.google.com/spreadsheets/d/'+str(id)+'/edit?gid=0#gid=0')
+    url = 'https://docs.google.com/spreadsheets/d/'+str(id)+'/edit?gid=0#gid=0'
 
     conn = st.connection("gsheets", type=GSheetsConnection)
 
