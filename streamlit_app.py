@@ -8,7 +8,7 @@ def main():
     params = st.experimental_get_query_params()
     st.text(params)
     id=params['id'][0]
-    url = f"https://docs.google.com/open?id={id}"
+    url = f"https://docs.google.com/spreadsheets/d/{id}"
 
     conn = st.connection("gsheets", type=GSheetsConnection)
 
