@@ -1,7 +1,7 @@
 # example/st_app.py
 
 import streamlit as st
-from streamlit_gsheets import GSheetsConnection
+# from streamlit_gsheets import GSheetsConnection
 
 # @st.cache(suppress_st_warning=True)
 def main():
